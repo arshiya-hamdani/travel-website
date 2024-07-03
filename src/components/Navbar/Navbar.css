@@ -1,0 +1,164 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 2px solid whitesmoke;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  border: none;
+  background-color: #efdbbb; /* Background color when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.logodiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logodiv span {
+  color: black;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #f36912;
+}
+
+.signupbtn {
+  background-color: #f36912;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signupbtn:hover {
+  background-color: rgba(61, 150, 227, 0.8);
+}
+
+.menuicon {
+  display: none;
+}
+
+.closeicon {
+  display: none;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1024px) {
+  .menuicon {
+    display: block;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 4rem; /* Position just below the navbar */
+    width: 80%;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.94);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    z-index: 999;
+  }
+  .menu.shownavbar {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .menu.shownavbar ul li:hover {
+    border-bottom: 2px solid rgb(28, 27, 27);
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  .closeicon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .logodiv span {
+    font-size: 20px;
+  }
+  .menu {
+    width: 90%;
+  }
+  .menu li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .signupbtn {
+    padding: 0.5rem 0.75rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar {
+    padding: 2rem 3rem;
+  }
+  .logodiv span {
+    font-size: 28px;
+  }
+  .menu li {
+    margin-right: 2rem;
+  }
+  .signupbtn {
+    font-size: 18px;
+    padding: 0.75rem 1.25rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

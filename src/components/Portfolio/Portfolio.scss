@@ -1,0 +1,113 @@
+.portfoliosec {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.portfoliosec .seccontainer {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.portfoliosec .leftcontent,
+.portfoliosec .rightcontent {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+}
+
+.portfoliosec .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfoliosec .heading h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.portfoliosec .singleportfolio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.portfoliosec .icondiv {
+  margin-right: 20px;
+}
+
+.portfoliosec .icondiv img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.portfoliosec .infor h4 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.portfoliosec .infor p {
+  font-size: 16px;
+  color: #252020;
+}
+
+@media screen and (max-width: 768px) {
+  .portfoliosec .seccontainer {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .portfoliosec .leftcontent,
+  .portfoliosec .rightcontent {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .portfoliosec .singleportfolio {
+    flex-direction: column; /* Stack items vertically within each portfolio entry */
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .portfoliosec .icondiv {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add space below the icon when stacked vertically */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfoliosec {
+    padding: 20px 0; /* Reduce overall padding for very small screens */
+  }
+
+  .portfoliosec .leftcontent,
+  .portfoliosec .rightcontent {
+    padding: 15px;
+  }
+
+  .portfoliosec .heading h3 {
+    font-size: 20px; /* Reduce heading size */
+  }
+
+  .portfoliosec .singleportfolio {
+    padding: 10px; /* Reduce padding within each portfolio entry */
+  }
+
+  .portfoliosec .infor h4 {
+    font-size: 16px; /* Reduce font size for information */
+  }
+
+  .portfoliosec .infor p {
+    font-size: 14px;
+    padding: .5rem 0; /* Reduce font size for paragraphs */
+  }
+}

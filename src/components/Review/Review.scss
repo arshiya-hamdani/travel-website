@@ -1,0 +1,133 @@
+.reviewcontainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.reviewcontainer .seccontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reviewcontainer .textdiv {
+  margin-bottom: 40px;
+}
+
+.reviewcontainer .textdiv .text {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff6f61;
+}
+
+.reviewcontainer .textdiv p {
+  font-size: 16px;
+  color: #1c1b1b;
+  margin: 20px 0;
+}
+
+.reviewcontainer .textdiv .stars {
+  gap: 0.5rem;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.reviewcontainer .textdiv .stars .icon {
+  margin-right: 5px;
+  color: #ed8e09;
+  font-size: 24px;
+}
+
+.reviewcontainer .textdiv .clients {
+  padding: 1rem 0;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviewcontainer .textdiv .clients img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid gray;
+  box-shadow: 0 0 2px 2px rgb(251, 212, 194);
+  margin: 0 10px;
+}
+
+.reviewcontainer .textdiv .imgdiv {
+  margin-bottom: 20px;
+}
+
+.reviewcontainer .textdiv .imgdiv img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .reviewcontainer .textdiv .text {
+      font-size: 20px;
+  }
+
+  .reviewcontainer .textdiv p {
+      font-size: 14px;
+      margin: 15px 0;
+  }
+
+  .reviewcontainer .textdiv .stars .icon {
+      font-size: 20px;
+  }
+
+  .reviewcontainer .textdiv .clients img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .reviewcontainer .textdiv .imgdiv img {
+      height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviewcontainer {
+      padding: 10px;
+  }
+
+  .reviewcontainer .seccontainer {
+      padding: 10px;
+  }
+
+  .reviewcontainer .textdiv {
+      margin-bottom: 20px;
+  }
+
+  .reviewcontainer .textdiv .text {
+      font-size: 18px;
+  }
+
+  .reviewcontainer .textdiv p {
+      font-size: 12px;
+      margin: 10px 0;
+  }
+
+  .reviewcontainer .textdiv .stars .icon {
+      font-size: 18px;
+  }
+
+  .reviewcontainer .textdiv .clients img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .reviewcontainer .textdiv .imgdiv img {
+      height: 200px;
+  }
+}

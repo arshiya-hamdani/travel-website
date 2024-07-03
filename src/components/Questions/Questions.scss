@@ -1,0 +1,154 @@
+.questions-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading h3 {
+  font-size: 24px;
+  color: #1b1a1a;
+  margin-bottom: 20px;
+}
+
+.container {
+  .question {
+      margin-bottom: 20px;
+      padding: 0; /* Remove padding from question container */
+  }
+
+  .title {
+      font-size: 18px;
+      padding: 1rem;
+      justify-content: space-between;
+      border-radius: 10px;
+      background-color: bisque;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+
+  .icon {
+      margin-left: auto;
+      font-size: 20px;
+      color: black;
+  }
+
+  .answer {
+      font-size: 16px;
+      color: #0b0a0a;
+      line-height: 1.5;
+      margin: 0;
+      padding: 1rem;
+      background: hsl(14, 25%, 90%);
+      border-radius: 0 0 10px 10px;
+      transition: all 0.3s ease-in-out;
+      opacity: 1;
+  }
+
+  .active-title {
+      border-radius: 10px 10px 0 0;
+  }
+
+  .question.active .answer {
+      padding-top: 10px; /* Ensure padding between title and answer */
+  }
+}
+
+.form {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #fff; /* Add a background color for form */
+
+  .heading h3 {
+      font-size: 20px;
+      color: #141313;
+      margin-bottom: 10px;
+  }
+
+  .heading p {
+      font-size: 16px;
+      color: #060606;
+  }
+
+  .form-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input[type='email'],
+      textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 25px;
+          font-size: 16px;
+          color: #191717;
+      }
+
+      textarea {
+          height: 150px;
+          border-radius: 10px;
+      }
+
+      .btn {
+        padding: 8px 16px; 
+        background-color: #e68123;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 25px;
+        width: fit-content;
+        margin: 0 auto; /* Center the button */
+      }
+
+      .btn:hover {
+          background-color: #ed602d;
+      }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .questions-container {
+      padding: 10px;
+  }
+
+  .container .title {
+      font-size: 16px;
+      padding: 0.8rem;
+  }
+
+  .container .answer {
+      font-size: 14px;
+      padding: 0.8rem;
+  }
+
+  .form .form-content .btn {   
+      padding: 6px 12px; /* Adjust padding for smaller screens */
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .title {
+      font-size: 14px;
+      padding: 0.6rem;
+  }
+
+  .container .answer {
+      font-size: 12px;
+      padding: 0.6rem;
+  }
+
+  .form .form-content .btn {
+      padding: 4px 8px; /* Further adjust padding for very small screens */
+      font-size: 12px;
+  }
+}

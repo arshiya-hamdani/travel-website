@@ -1,0 +1,243 @@
+/* Destination Container */
+.destination-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title Styling */
+.destination-container .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.destination-container .text {
+  color: #ff6f61;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.destination-container .title h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.destination-container .title p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Search Field Styling */
+.destination-container .search-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.destination-container .input-field {
+  background: #efdbbb;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.destination-container .input-field input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.destination-container .input-field .icon {
+  color: #070606;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.destination-container .search-btn {
+  flex: 1;
+  max-width: 300px;
+}
+
+.destination-container .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ed6314;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.destination-container .btn-search:hover {
+  background-color: #fb7a30;
+}
+
+/* Menu Styling */
+.destination-container .menu {
+  margin-top: 2rem;
+}
+
+.destination-container .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.destination-container .flex li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.destination-container .flex li.active,
+.destination-container .flex li:hover {
+  background-color: #ed6314;
+  color: #fff;
+}
+
+/* Destination Grid Styling */
+.destination-container .destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.destination-container .single-destination {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.destination-container .img-div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.destination-container .img-div img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  transition: all 0.3s ease-in;
+}
+
+.destination-container .img-div:hover img {
+  transform: scale(1.1);
+}
+
+.destination-container .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 20px 20px;
+}
+
+.destination-container .name {
+  color: #f3e8e8;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  text-align: center;
+  
+}
+
+.destination-container .desc p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.destination-container .single-destination .desc p .icon {
+  color: white;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.destination-container .rating {
+  background-color: #d65910;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .destination-container .search-field {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .destination-container .input-field {
+    width: 100%;
+    max-width: none;
+  }
+
+  .destination-container .btn-search {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .destination-container .destination-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .destination-container .search-field {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .destination-container .input-field {
+    width: 100%;
+    max-width: none;
+  }
+
+  .destination-container .btn-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .destination-container .destination-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .destination-container .flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

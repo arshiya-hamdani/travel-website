@@ -1,0 +1,109 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background: #000;
+}
+.home .videobg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.home .videobg .video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .sectiontext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(240, 230, 230);
+  text-align: center;
+}
+.home .sectiontext h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.home .sectiontext p {
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.home .sectiontext .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  background-color: #f36912;
+  color: white;
+  border-radius: 40px;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 1px;
+  height: 3rem;
+  width: 15rem;
+  cursor: pointer;
+}
+.home .sectiontext .btn:hover {
+  background-color: #d25600;
+}
+.home .sectiontext .icon {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.home .popularplaces {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .home .sectiontext {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .home h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .home p {
+    padding: 1rem 0;
+    font-size: 0.5rem;
+    max-width: 70%;
+    margin: auto;
+  }
+  .home .btn {
+    font-size: 0.5rem;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 769px) {
+  .home .sectiontext {
+    width: 100%;
+  }
+  .home .sectiontext h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+  }
+  .home .sectiontext p {
+    padding: 1rem 0;
+    font-size: 1rem;
+    max-width: 70%;
+    margin: auto;
+  }
+  .home .sectiontext .btn {
+    gap: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    margin: auto;
+  }
+}/*# sourceMappingURL=Home.css.map */
